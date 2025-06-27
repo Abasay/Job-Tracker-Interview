@@ -6,15 +6,15 @@ A full-stack Next.js application for tracking job applications with AI-powered j
 
 - **Add, Edit, Delete Job Applications**: Complete CRUD operations for managing job applications
 - **Status Tracking**: Track application status (Applied, Interviewing, Rejected, Offer)
-- **AI Job Analysis**: Paste job descriptions to get AI-powered summaries and skill recommendations
+- **AI Job Analysis**: Paste job descriptions to get AI-powered summaries and skill recommendations (via Groq)
 - **Dashboard**: Visual overview with statistics and application management
 - **Local Storage**: Uses JSON file storage (no database required)
 
 ## Tech Stack
 
-- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 15, TypeScript, Tailwind CSS
 - **Backend**: Next.js API Routes
-- **AI**: OpenAI GPT-3.5-turbo
+- **AI**: Groq AI (llama3-70b-8192)
 - **Storage**: Local JSON file
 - **Icons**: Lucide React
 
@@ -26,11 +26,11 @@ A full-stack Next.js application for tracking job applications with AI-powered j
    npm install
    ```
 
-2. **Set up OpenAI API Key**:
-   Create a `.env.local` file and add your OpenAI API key:
+2. **Set up Groq API Key**:
+   Create a `.env.local` file and add the content inside the .env.example as below:
 
    ```
-   OPENAI_API_KEY=your_openai_api_key_here
+   GROQ_API_KEY=GROQQ_API_KEY
    ```
 
 3. **Run Development Server**:
@@ -62,12 +62,14 @@ A full-stack Next.js application for tracking job applications with AI-powered j
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
-├── components/
+├── components/Job
+│   ├── index.tsx
 │   ├── JobForm.tsx
 │   ├── JobTable.tsx
 │   └── JobAnalyzer.tsx
 ├── lib/
 │   ├── storage.ts
+│   ├── groqqai.ts
 │   └── openai.ts
 ├── types/
 │   └── job.ts
@@ -84,15 +86,11 @@ A full-stack Next.js application for tracking job applications with AI-powered j
 
 ## AI Features
 
-The AI analyzer uses OpenAI's GPT-3.5-turbo to:
+The AI analyzer uses GROQQ AI to:
 
 - Provide concise job summaries
 - Suggest top 3 skills to highlight in your resume
 - Help you better understand job requirements
-
-## Note
-
-If you don't have an OpenAI API key, the AI analysis feature will show a fallback message, but all other features will work perfectly.
 
 ## Build for Production
 
