@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Frontend Dev",
+    "company": "Tech",
+    "applicationLink": "http://localhost:3000/",
+    "status": "Rejected",
+    "id": "1751039451167",
+    "createdAt": "2025-06-27T15:50:51.167Z",
+    "updatedAt": "2025-06-27T16:01:42.336Z"
+  },
+  {
+    "title": "Frontend Devel",
+    "company": "Tech",
+    "applicationLink": "http://localhost:3000/",
+    "status": "Interviewing",
+    "id": "1751039818251",
+    "createdAt": "2025-06-27T15:56:58.251Z",
+    "updatedAt": "2025-06-27T15:59:23.808Z"
+  },
+  {
+    "title": "Frontend Develop",
+    "company": "Tech",
+    "applicationLink": "http://localhost:3000/",
+    "status": "Interviewing",
+    "id": "1751039924320",
+    "createdAt": "2025-06-27T15:58:44.320Z",
+    "updatedAt": "2025-06-27T15:58:44.320Z"
+  },
+  {
+    "title": "ASDFGHJ",
+    "company": "Tech",
+    "applicationLink": "https://local:3002",
+    "status": "Applied",
+    "id": "1751040142334",
+    "createdAt": "2025-06-27T16:02:22.334Z",
+    "updatedAt": "2025-06-27T16:02:37.260Z"
+  }
+]
