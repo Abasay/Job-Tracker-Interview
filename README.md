@@ -28,18 +28,19 @@ A full-stack Next.js application for tracking job applications with AI-powered j
 
 2. **Set up Groq API Key**:
    Create a `.env.local` file and add the content inside the .env.example as below:
+   **Note:** The Key might have been deactivated by the time this assessment is assessed due to groq's security policy, kindly create a new key here: https://console.groq.com/keys
 
    ```
    GROQ_API_KEY=GROQQ_API_KEY
    ```
 
-3. **Run Development Server**:
+4. **Run Development Server**:
 
    ```bash
    npm run dev
    ```
 
-4. **Open Browser**:
+5. **Open Browser**:
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## API Endpoints
